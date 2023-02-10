@@ -3,7 +3,6 @@
     <app-header></app-header>
     <game-board></game-board>
   </div>
-  <app-footer></app-footer>
 </template>
 
 <script setup lang="ts">

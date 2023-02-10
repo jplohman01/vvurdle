@@ -27,10 +27,12 @@ const style = computed(() => {
 <style lang="scss" scoped>
 .gameboard {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   &__content {
     display: grid;
     gap: 10px;
+    margin: 10px;
   }
 }
 </style>

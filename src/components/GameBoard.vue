@@ -26,7 +26,10 @@
     @opensettings="showSettingsModal = true"
     @reset="game.reset"
   />
-  <GameGrid :board="game.board" />
+  <section class="double">
+  <GameGrid :board="game.board"/>
+  <GameGrid :board="game.board"/>
+</section>
   <GameKeyboard
     :keyboard="game.keyboard"
     :disabled="game.over"
@@ -76,5 +79,10 @@ watch(
 .fade-modal-enter-from,
 .fade-modal-leave-to {
   opacity: 0;
+}
+.double {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 </style>
